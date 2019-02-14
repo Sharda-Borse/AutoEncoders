@@ -1,28 +1,28 @@
 ## AutoEncoders 
 
 - Self Supervised Algorithms(Unsupervised directed type of network)
-- AE used for
-			1) Feature detections
-			2) Recomendation System
-			3) Encoding Data
+# AE used for
+	1) Feature detections
+	2) Recomendation System
+	3) Encoding Data
 - Activation function(hyperbolic tangent)
 - Softmax used in AE
 # Training AE
-			 1) Start with array where lines(observations) corrosponds to users and the columns(featues) corrosponds to movies. Each cell(u,i)contains ratings from 1 to 5. 0 if no ratings of the movie by user.
-			 2) first user goes into the network. the input vector x={r1,r2,r3....rm} contains all its ratings for all the movies
-			 3) the input vector x is encoded into a vector z of lower dimension by a mapping function f(e.g. sigmoid)
-			 				z=f(Wx+b) where W is vector of input weights and b the bais
-			 4) z is then decoded into the output vector of y same dimension as x. aimming to replicate the input vector x.
-			 5) the reconstuction erro d(x,y)=||x-y|| is computed. the goal is to minimize it.
-			 6) back Propogation frrom ritgh to lrft the error is backpropogated. The weights are updated according to how much they are responsible for th error. the learning rate decides by how much we update weights.
-			 7) Repeat steps 1 to 6 and update weights after each observation(Reinforcement Learning) or
-			    Repeat steps 1 to 6 but update weights only after a batch of observations(batch Learning).
-- Regularization Techniques
-			 1) Sparse Auto Encoders
-			 2) Denoising Auto Encoders
-			 3) Contractive Auto Encoders
-			 4) Stacked Auto Encoder
-			 5) Deep Auto Encoders
+	1) Start with array where lines(observations) corrosponds to users and the columns(featues) corrosponds to movies. Each cell(u,i)contains ratings from 1 to 5. 0 if no ratings of the movie by user.
+	2) first user goes into the network. the input vector x={r1,r2,r3....rm} contains all its ratings for all the movies
+	3) the input vector x is encoded into a vector z of lower dimension by a mapping function f(e.g. sigmoid)
+		z=f(Wx+b) where W is vector of input weights and b the bais
+	4) z is then decoded into the output vector of y same dimension as x. aimming to replicate the input vector x.
+	5) the reconstuction erro d(x,y)=||x-y|| is computed. the goal is to minimize it.
+	6) back Propogation frrom ritgh to lrft the error is backpropogated. The weights are updated according to how much they are responsible for th error. the learning rate decides by how much we update weights.
+	7) Repeat steps 1 to 6 and update weights after each observation(Reinforcement Learning) or
+	Repeat steps 1 to 6 but update weights only after a batch of observations(batch Learning).
+# Regularization Techniques
+	1) Sparse Auto Encoders
+	2) Denoising Auto Encoders
+	3) Contractive Auto Encoders
+	4) Stacked Auto Encoder
+	5) Deep Auto Encoders
 	
 # Kaggle
 - https://www.kaggle.com/shardaborse/recomendationsautoencoders
