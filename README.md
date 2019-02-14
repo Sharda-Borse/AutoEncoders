@@ -18,11 +18,21 @@
 	7) Repeat steps 1 to 6 and update weights after each observation(Reinforcement Learning) or
 	Repeat steps 1 to 6 but update weights only after a batch of observations(batch Learning).
 # Regularization Techniques
+	OverComplete Hidden Layers (hidden Layers > input Layers). 
 	1) Sparse Auto Encoders
+		- when Hidden Layers> input Layers. It can cheat if we use all hidden node.
+		- To extract more features.
+		- It enables not to use all the hidden layers at any time
 	2) Denoising Auto Encoders
+		- handling at input layers
 	3) Contractive Auto Encoders
+		- http://www.icml-2011.org/papers/455_icmlpaper.pdf
 	4) Stacked Auto Encoder
+		- http://www.jmlr.org/papers/volume11/vincent10a/vincent10a.pdf
 	5) Deep Auto Encoders
+		- Stacked AE <> Deep Auto Encoders
+		- RBMs are stacked on top of each other
+		- https://www.cs.toronto.edu/~hinton/science.pdf
 	
 # Kaggle
 - https://www.kaggle.com/shardaborse/recomendationsautoencoders
